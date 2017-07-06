@@ -19,7 +19,7 @@
         <p><b>Минуты:</b>:</b><br>
             <input type="text" size="20">
         </p>
-        <div><input type="submit" name="submit" value="Расчитать угол!"/>
+        <div><input type="submit" name="submit" value="Вычисление"/>
 
         </div>
     </form>
