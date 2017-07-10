@@ -2,39 +2,28 @@
 
 class Timer
 {
-    // public $m;
-    //public $h;
+    public $y = array();
+    public $h;
+    public $m;
 
-    var $m;
-    var $h;
-    var $y;
 
-    function time()
+    public function __construct($h, $m)
     {
-        $m = 15;
-        $h = 3;
-        $y = ($h + ($m / 60)) * 30 - $m * 6;
-        echo $y;
+        $this->y = array($h, $m);
+    }
+
+    public function Corner()
+    {
+        foreach ($this->y as $u){
+            $u = ($h + ($m / 60)) * 30 - $m * 6;
+        }
+
+        return $u;
     }
 }
 
-$time = new Timer;
-$time -> y = "";
-echo $time->y;
+$time = new Timer (3, 15);
 
-
-
-
-        /**public function time() {
-            $m = 15;
-            $h = 3;
-            $y = ($h + ($m / 60))*30 - $m * 6;
-            echo $y;
-        } **/
-
-
-
-
-
+echo "Угол: ", $time->Corner();
 
 ?>

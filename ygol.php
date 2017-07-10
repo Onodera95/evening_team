@@ -13,13 +13,16 @@
 <div class="container";>
     <form action="" method="post">
 
-        <p><b>Час:</b><br>
+        <p><b>Катет a:</b><br>
             <input type="text" size="20">
         </p>
-        <p><b>Минуты:</b>:</b><br>
+        <p><b>Гепотенуза:</b>:</b><br>
             <input type="text" size="20">
         </p>
         <div><input type="submit" name="submit" value="Вычисление"/>
+            <p><b>Катет b:</b>:</b><br>
+                <output name="result"></output>
+            </p>
 
         </div>
     </form>
